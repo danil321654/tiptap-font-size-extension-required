@@ -1,7 +1,7 @@
 import '@tiptap/extension-text-style'
 import { Extension } from '@tiptap/core'
 
-interface fontSizeOptions {
+interface FontSizeOptions {
   types: string[]
   defaultFontSize: string
 }
@@ -9,25 +9,19 @@ interface fontSizeOptions {
 declare module '@tiptap/core' {
   interface Commands<ReturnType> {
     fontSize: {
-      /**
-       * Set the font family
-       */
       setFontSize: (fontSize: string) => ReturnType
-      /**
-       * Unset the font family
-       */
       unsetFontSize: () => ReturnType
     }
   }
 }
 
-export const FontSize = Extension.create<fontSizeOptions>({
+export const FontSize = Extension.create<FontSizeOptions>({
   name: 'fontSize',
 
-  defaultOptions: {
+  addOptions: () => ({
     types: ['textStyle'],
     defaultFontSize: '14px'
-  },
+  }),
 
   addGlobalAttributes() {
     return [

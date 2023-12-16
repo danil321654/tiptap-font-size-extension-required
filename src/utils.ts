@@ -4,5 +4,5 @@ export const addStyleToHtml = (html: string) => {
   template.querySelectorAll("p").forEach((paragraph) => {
     paragraph.innerHTML = `<span style>${paragraph.innerHTML}</span>`
   });
-  const result = template.innerHTML
+  return template.innerHTML
 };
