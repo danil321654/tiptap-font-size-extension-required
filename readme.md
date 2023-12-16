@@ -56,6 +56,7 @@ FontSize.configure({
 
 1. **TextStyle extension is required**
 2. To add default styles you should transform content with util function `addStyleToHtml`
+
 `import { addStyleToHtml } from "tiptap-extension-font-size-required";`
 ```
 const editor = useEditor({
@@ -66,4 +67,5 @@ const editor = useEditor({
 
 ## ListItemMarker
 Can't be configured. It's **required to import styles** to use this decorator
+
 `import "../node_modules/tiptap-extension-font-size-required/dist/style.css";`
