@@ -3,7 +3,7 @@
 
 An extension for tiptap, which handles working with font sizes.
 
-Fixed comparing to https://github.com/TheNaschkatze/tiptap-extension-font-size :
+Fixed comparing to other tiptap font size extensions:
 
 1. Fixed ordered and unordered list marker size 
 2. Font size now is required property, you can configure default font size
