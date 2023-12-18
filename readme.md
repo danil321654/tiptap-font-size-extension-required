@@ -11,7 +11,7 @@ Fixed comparing to other tiptap font size extensions:
 
 ## To start
 
-1. `yarn add tiptap-extension-font-size`
+1. `yarn add tiptap-extension-font-size-required`
 2. import extensions and styles **TextStyle** is required
 ```
 import { useEditor, EditorContent } from "@tiptap/react";
